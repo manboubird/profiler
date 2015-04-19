@@ -21,6 +21,10 @@
 
 <script type="text/javascript" src="../../examples/data/movies.js"></script>
 <script type="text/javascript" src="../../examples/data/movies2.js"></script>
+
+<script type="text/javascript" src="../../examples/data/simple.js"></script>
+
+
 <script type="text/javascript" src="../../lib/d3/data/world-countries.js"></script>
 <script type="text/javascript" src="../../lib/d3/data/us-states.js"></script>
 <script type="text/javascript" src="../../lib/datatables/jquery.dataTables.min.js"></script>
@@ -59,7 +63,12 @@ $(document).ready(function() {
     // TODO Refactor schema in profile.
   }
 
-var data_table = dv.table(movies_data);
+// var data_table = dv.table(movies_data);
+var data_table = dv.table(
+  // movies_data
+  movies2_data
+  // simple_one
+);
 
 
  upload.app({onupload:start_wrangler, debug:true, examples:[{name:'Crime', value:data_table}]});
