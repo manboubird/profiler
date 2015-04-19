@@ -1,25 +1,25 @@
 
 ### Profiler movies2 Input Data
 
-| type (Pofiler input data type) | name (label of column name)   | sample values (Distinct & selected values)  |
-|---------|---------|----------------|
-| nominal | Creative Type | ["Contemporary Fiction","Dramatization","Factual","Fantasy","Historical Fiction","Kids Fiction"] |
-|         | Distributor | ["20th Century Fox","3D Entertainment","8X Entertainment","Access Motion Picture Group","AdLab Films","Alliance"] |
-|         | MPAA Rating | ["G","NC-17","Not Rated","Open","PG","PG-13"] |
-|         | Major Genre | ["Action","Adventure","Black Comedy","Comedy","Concert/Performance","Documentary"] |
-|         | Release Location | ["A Nightmare on Elm Street 4","Argentina","Austin Powers","Australia","Austria","Bahrain"] |
-| numeric | IMDB Rating | [0,1.4,1.5,1.6,1.7,2] |
-|         | IMDB Votes | [0,18,25,26,33,35] |
-|         | Production Budget | [0,218,1100,5000,6000,7000] |
-|         | Rotten Tomatoes Rating | [0,1,2,3,4,5] |
-|         | Running Time (min) | [0,46,72,74,75,77] |
-|         | US DVD Sales | [0,618454,853973,893953,910568,943385] |
-|         | US Gross | [0,401,423,527,673,703] |
-|         | Worldwide Gross | [0,401,423,527,673,703] |
-| text    | Title | ["10,000 B.C.","102 Dalmatians","10th & Wolf","11:14","12 Angry Men","12 Rounds"] |
-| unknown | Director | ["Abel Ferrara","Adam McKay","Adam Shankman","Adrian Lyne","Adrienne Shelly","Akira Kurosawa"] |
-|         | Release Date | ["1-Apr-05","1-Apr-06","1-Apr-75","1-Apr-88","1-Apr-96","1-Aug-03"] |
-|         | Source | ["Based on Book/Short Story","Based on Comic/Graphic Novel","Based on Factual Book/Article","Based on Game","Based on Magazine Article","Based on Musical/Opera"] |
+| type (Pofiler input data type) | name (the label of column name) | infered type | sample values (Distinct & selected values)  |
+|---------|---------|---------|----------------|
+| nominal | Creative Type | ABC | ["Contemporary Fiction","Dramatization","Factual","Fantasy","Historical Fiction","Kids Fiction"] |
+|         | Distributor | ABC | ["20th Century Fox","3D Entertainment","8X Entertainment","Access Motion Picture Group","AdLab Films","Alliance"] |
+|         | MPAA Rating | # |["G","NC-17","Not Rated","Open","PG","PG-13"] |
+|         | Major Genre | ABC |["Action","Adventure","Black Comedy","Comedy","Concert/Performance","Documentary"] |
+|         | Release Location | geo | ["A Nightmare on Elm Street 4","Argentina","Austin Powers","Australia","Austria","Bahrain"] |
+| numeric | IMDB Rating | # |[0,1.4,1.5,1.6,1.7,2] |
+|         | IMDB Votes | # | [0,18,25,26,33,35] |
+|         | Production Budget | # | [0,218,1100,5000,6000,7000] |
+|         | Rotten Tomatoes Rating | # | [0,1,2,3,4,5] |
+|         | Running Time (min) | # | [0,46,72,74,75,77] |
+|         | US DVD Sales | # | [0,618454,853973,893953,910568,943385] |
+|         | US Gross | # | [0,401,423,527,673,703] |
+|         | Worldwide Gross | # | [0,401,423,527,673,703] |
+| text    | Title | ABC | ["10,000 B.C.","102 Dalmatians","10th & Wolf","11:14","12 Angry Men","12 Rounds"] |
+| unknown | Director | ABC | ["Abel Ferrara","Adam McKay","Adam Shankman","Adrian Lyne","Adrienne Shelly","Akira Kurosawa"] |
+|         | Release Date | TIME | ["1-Apr-05","1-Apr-06","1-Apr-75","1-Apr-88","1-Apr-96","1-Aug-03"] |
+|         | Source | ABC | ["Based on Book/Short Story","Based on Comic/Graphic Novel","Based on Factual Book/Article","Based on Game","Based on Magazine Article","Based on Musical/Opera"] |
 
 ```json
 {"type":"nominal","name":"Creative Type","sample_values":["Contemporary Fiction","Dramatization","Factual","Fantasy","Historical Fiction","Kids Fiction"]}
